@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SignInTest">
+      <class name="Test.FlightBookingTest">
         <methods>
-          <include name="shouldThrowAnErrorIfSignInDetailsAreMissing"/>
+          <include name="initialize"/>
+          <include name="TeardownTest"/>
+          <include name="testThatResultsAppearForAOneWayJourney"/>
         </methods>
-      </class> <!-- SignInTest -->
+      </class> <!-- Test.FlightBookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
