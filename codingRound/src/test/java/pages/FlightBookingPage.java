@@ -1,5 +1,7 @@
 package pages;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,6 +30,11 @@ public class FlightBookingPage extends BaseClass {
 	@FindBy(how = How.XPATH, using = "//input[@value=\"Search flights\"]")
 	WebElement searchFlightButton;
 	
+	@FindBy(how = How.XPATH, using = "//*[@id='GlobalNav']/div/div[2]/div/strong")
+	WebElement verifyResult;
+	
+	
+	
 
 	public void selectFromStation(String fromStation) {
 		sourceStation.clear();
@@ -45,8 +52,11 @@ public class FlightBookingPage extends BaseClass {
 	}
 
 	public void searchFlightButton() {
-		pickADate.sendKeys();
+		searchFlightButton.click();
 	}
 
+	public void verifyFatchedResult() {
+		assertTrue(verifyResult.isDisplayed(), "We are not on searched flight result page");
+	}
 	
 }

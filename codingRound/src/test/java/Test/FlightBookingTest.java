@@ -11,17 +11,14 @@ import pages.FlightBookingPage;
 public class FlightBookingTest extends BaseClass  {
 
     @Test
-    public void testThatResultsAppearForAOneWayJourney() {
+    public void testThatResultsAppearForAOneWayJourney() throws InterruptedException {
 
     	FlightBookingPage flightBookingTest=PageFactory.initElements(driver, FlightBookingPage.class);    	
     	flightBookingTest.selectFromStation("Bangalore");
     	flightBookingTest.selectTargetStation("Delhi");
-
     	flightBookingTest.selectDate("//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[4]/td[5]/a");
-    	driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[4]/td[5]/a")).click();
-//    	Actions action = new Actions(driver);
-//    	action.sendKeys(Keys.ESCAPE);
-    	flightBookingTest.searchFlightButton();
+    	BaseClass.clickUsingJavaScript("SearchBtn");
+    	flightBookingTest.verifyFatchedResult();
     }
     
     public void datePicker() {
