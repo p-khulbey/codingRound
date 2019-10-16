@@ -1,4 +1,4 @@
-package Test;
+package common;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -22,9 +22,9 @@ public class BaseClass {
 	public void initialize() throws IOException {
 
 //		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\java\\drivers\\chromedriver.exe");
-		// System.setProperty("webdriver.chrome.driver",
-		// System.getProperty("user.dir")+"\\libs\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "D:\\Chrome\\chromedriver_win32\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver",
+		 System.getProperty("user.dir")+"\\libs\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "D:\\Chrome\\chromedriver_win32\\chromedriver.exe");
 
 		// To open facebook
 		ChromeOptions chromeOptions = new ChromeOptions();

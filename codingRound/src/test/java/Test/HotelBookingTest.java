@@ -3,6 +3,7 @@ package Test;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
+import common.BaseClass;
 import pages.HotelBookingPage;
 
 public class HotelBookingTest extends BaseClass  {
@@ -14,7 +15,7 @@ public class HotelBookingTest extends BaseClass  {
     	hotelBookingPage.clickOnHotelLink();
     	hotelBookingPage.clickOnLocalityTextBox("Indiranagar, Bangalore");
     	hotelBookingPage.selectDate("//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[4]/td[4]/a", "//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[4]/td[6]/a");
-    	BaseClass.selectTravellers("travellersOnhome", "1 room, 2 adults");
+//    	BaseClass.selectTravellers("travellersOnhome", "1 room, 2 adults");
     	hotelBookingPage.searchHotelsButton();
 
     }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import Test.BaseClass;
+import common.BaseClass;
 
 public class HotelBookingPage extends BaseClass  {
 	
@@ -23,7 +23,7 @@ public class HotelBookingPage extends BaseClass  {
     @FindBy(id = "Tags")
     private WebElement localityTextBox;
 
-    @FindBy(id = "SearchHotelsButton")
+    @FindBy(id = "SearchHotelsButton") 
     private WebElement searchButton;
 
     @FindBy(id = "travellersOnhome")
@@ -46,8 +46,6 @@ public class HotelBookingPage extends BaseClass  {
 		checkInDate.click();
 		driver.findElement(By.xpath(startDate)).click();
 		driver.findElement(By.xpath(endDate)).click();
-		//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[4]/td[4]/a
-		//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[4]/td[6]/a
 	}
 
 	public void searchHotelsButton() {

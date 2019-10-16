@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3958" started-at="2019-10-16T07:52:15Z" finished-at="2019-10-16T07:52:19Z">
+  <suite name="Default suite" duration-ms="2783" started-at="2019-10-16T09:07:54Z" finished-at="2019-10-16T09:07:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3958" started-at="2019-10-16T07:52:15Z" finished-at="2019-10-16T07:52:19Z">
+    <test name="Default test" duration-ms="2783" started-at="2019-10-16T09:07:54Z" finished-at="2019-10-16T09:07:56Z">
       <class name="Test.FlightBookingTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Test.FlightBookingTest@735b5592]" name="initialize" is-config="true" duration-ms="11169" started-at="2019-10-16T07:52:04Z" finished-at="2019-10-16T07:52:15Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Test.FlightBookingTest@735b5592]" name="initialize" is-config="true" duration-ms="8884" started-at="2019-10-16T09:07:45Z" finished-at="2019-10-16T09:07:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:Test.FlightBookingTest@735b5592]" name="testThatResultsAppearForAOneWayJourney" duration-ms="3936" started-at="2019-10-16T07:52:15Z" finished-at="2019-10-16T07:52:19Z">
+        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:Test.FlightBookingTest@735b5592]" name="testThatResultsAppearForAOneWayJourney" duration-ms="2760" started-at="2019-10-16T09:07:54Z" finished-at="2019-10-16T09:07:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:Test.FlightBookingTest@735b5592]" name="TeardownTest" is-config="true" duration-ms="611" started-at="2019-10-16T07:52:19Z" finished-at="2019-10-16T07:52:20Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:Test.FlightBookingTest@735b5592]" name="TeardownTest" is-config="true" duration-ms="624" started-at="2019-10-16T09:07:56Z" finished-at="2019-10-16T09:07:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->

@@ -4,9 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
-import Test.BaseClass;
-
+import common.BaseClass;
 
 public class CleartripHomePage extends BaseClass {
 

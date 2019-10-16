@@ -1,6 +1,7 @@
 package Test;
 
 import org.openqa.selenium.support.PageFactory;
+import common.BaseClass;
 import org.testng.annotations.Test;
 
 import pages.CleartripHomePage;
